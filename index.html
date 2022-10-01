@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Atena</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='/css/style.css'>
+        <script src='/js/main.js'></script>
+    </head>
+    <body>
+        <section>
+            <div class="card" >
+                <div class="container-img">
+                    <img class="img-card" src="assets/atena.jpg" alt="">                
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ad quia earum rerum omnis nostrum harum modi impedit inventore obcaecati qui pariatur nam recusandae dolorem voluptate placeat excepturi illo laborum?
+                </p>
+                <div class="container-button">
+                    <div class="button">1</div>
+                    <div class="button">2</div>
+                    <div class="button">3</div>
+                    <div class="button">4</div>
+                </div>
+            </div> 
+            
+        </section>
+        <script>
+            var buttons = document.getElementsByClassName('button');
+            // console.log(buttons);
+            // buttons.addEventListener("click",() =>{
+            //     console.log("foi clicado");
+            // })
+
+
+            Array.prototype.slice.call(buttons).forEach(function(pegaElementoAtual){
+                pegaElementoAtual.addEventListener('click', function(e){
+                    console.log("clicado " + this.innerHTML);
+                });
+            });
+        </script>
+    </body>
+</html>
