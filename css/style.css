@@ -1,4 +1,9 @@
+html {
+    background: linear-gradient( rgb(240, 219, 214), rgba(194, 116, 116, 0));
+}
+
 body {
+    height: 100vh;
     margin: 0;
 }
 

@@ -5,40 +5,62 @@
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>Atena</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='stylesheet' type='text/css' media='screen' href='/css/style.css'>
-        <script src='/js/main.js'></script>
+        <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
     </head>
     <body>
         <section>
             <div class="card" >
                 <div class="container-img">
-                    <img class="img-card" src="assets/atena.jpg" alt="">                
+                    <img id="imagem" class="img-card" alt="">                
                 </div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ad quia earum rerum omnis nostrum harum modi impedit inventore obcaecati qui pariatur nam recusandae dolorem voluptate placeat excepturi illo laborum?
-                </p>
+                <p id="ask" ></p>
                 <div class="container-button">
-                    <div class="button">1</div>
-                    <div class="button">2</div>
-                    <div class="button">3</div>
-                    <div class="button">4</div>
+                    <div id="button-1" class="button">1</div>
+                    <div id="button-2" class="button">2</div>
+                    <div id="button-3" class="button">3</div>
+                    <div id="button-4" class="button">4</div>
                 </div>
             </div> 
             
         </section>
         <script>
             var buttons = document.getElementsByClassName('button');
-            // console.log(buttons);
-            // buttons.addEventListener("click",() =>{
-            //     console.log("foi clicado");
-            // })
+
+            var imagem = document.querySelector("#imagem");
+            var ask = document.querySelector("#ask");
+
+            var button_1 = document.querySelector("#button-1");
+            var button_2 = document.querySelector("#button-2");
+            var button_3 = document.querySelector("#button-3");
+            var button_4 = document.querySelector("#button-4");
+
+           
+
+            var data = fetch("./perguntas/perg.json")
+                .then(resposta => resposta.json())
+                .then(json => {
+                    imagem.src = json[1].imagem;
+                    ask.innerHTML = json[1].ask;
+                    button_1.innerHTML = json[1].option_1;
+                    button_2.innerHTML = json[1].option_2;
+                    button_3.innerHTML = json[1].option_3;
+                    button_4.innerHTML = json[1].option_4;
+
+                    Array.prototype.slice.call(buttons).forEach(function(pegaElementoAtual){
+                        pegaElementoAtual.addEventListener('click', function(e){
+                            if (this == button_1) {
+                                alert("ACERTOU");
+                            } else {
+                                alert("errou");
+                            }
+                        });
+                    });
 
 
-            Array.prototype.slice.call(buttons).forEach(function(pegaElementoAtual){
-                pegaElementoAtual.addEventListener('click', function(e){
-                    console.log("clicado " + this.innerHTML);
-                });
-            });
+                }
+            );
+            
+            console.log(data);
         </script>
     </body>
 </html>
