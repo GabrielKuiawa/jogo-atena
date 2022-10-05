@@ -7,3 +7,7 @@ function esconder(id) {
         document.getElementById("form").style.display = 'flex';;
     }
 }
+
+function Redirect() {
+    window.location.href = "/view/asks.html";
+}
