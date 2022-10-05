@@ -1,7 +1,7 @@
 [
     {
         "id_ask":1,
-        "imagem":"perg_imagem/imagem1.jpg",
+        "imagem":"/js/perg_imagem/imagem1.jpg",
         "ask":"Qual a montanha mais alta do mundo?",
         "option_1":"Mauna Kea",
         "option_2":"Dhaulagiri",
@@ -11,7 +11,7 @@
     },
     {
         "id_ask":2,
-        "imagem":"perg_imagem/imagem2.jpg",
+        "imagem":"/js/perg_imagem/imagem2.jpg",
         "ask":"De quem é a famosa frase \"Penso,logo existo\"?",
         "option_1":"Descartes",
         "option_2":"Galileu Galilei",
@@ -21,7 +21,7 @@
     },
     {
         "id_ask":3,
-        "imagem":"perg_imagem/imagem3.jpg",
+        "imagem":"/js/perg_imagem/imagem3.jpg",
         "ask":"Qual o menor país do mundo?",
         "option_1":"Rússia",
         "option_2":"China",
@@ -31,7 +31,7 @@
     },
     {
         "id_ask":4,
-        "imagem":"perg_imagem/imagem4.jpg",
+        "imagem":"/js/perg_imagem/imagem4.jpg",
         "ask":"Qual o número mínimo de jogadores numa partida de futebol?",
         "option_1":"8",
         "option_2":"7",
@@ -41,7 +41,7 @@
     },
     {
         "id_ask":5,
-        "imagem":"perg_imagem/imagem5.jpg",
+        "imagem":"/js/perg_imagem/imagem5.jpg",
         "ask":"Quanto tempo a luz do Sol demora para chegar à Terra?",
         "option_1":"8 Minutos",
         "option_2":"1 dia",
@@ -51,7 +51,7 @@
     },
     {
         "id_ask":6,
-        "imagem":"perg_imagem/imagem6.jpg",
+        "imagem":"/js/perg_imagem/imagem6.jpg",
         "ask":"Em que período da pré_história o fogo foi descoberto?",
         "option_1":"Neopolítico",
         "option_2":"Paleolítico",
@@ -61,7 +61,7 @@
     },
     {
         "id_ask":7,
-        "imagem":"perg_imagem/imagem7.jpg",
+        "imagem":"/js/perg_imagem/imagem7.jpg",
         "ask":"Em qual local da Ásia o português é a língua oficial?",
         "option_1":"Moçambique",
         "option_2":"Portugal",
@@ -71,7 +71,7 @@
     },
     {
         "id_ask":8,
-        "imagem":"perg_imagem/imagem8.jpg",
+        "imagem":"/js/perg_imagem/imagem8.jpg",
         "ask":"Qual destes países é transcontinental?",
         "option_1":"Rússia",
         "option_2":"Filipinas",
@@ -81,7 +81,7 @@
     },
     {
         "id_ask":9,
-        "imagem":"perg_imagem/ imagem9.jpg",
+        "imagem":"/js/perg_imagem/ imagem9.jpg",
         "ask":"Qual o maior animal terrestre?",
         "option_1":"Baleia Azul",
         "option_2":"Dinossauro",
@@ -91,7 +91,7 @@
     },
     {
         "id_ask":10,
-        "imagem":"perg_imagem/imagem10.jpg",
+        "imagem":"/js/perg_imagem/imagem10.jpg",
         "ask":"Quem foi o primeiro homem a pisar na lua?",
         "option_1":"Yuri Gagarin",
         "option_2":"Buzz Aldrin",
@@ -101,7 +101,7 @@
     },
     {
         "id_ask":11,
-        "imagem":"perg_imagem/imagem11.jpg",
+        "imagem":"/js/perg_imagem/imagem11.jpg",
         "ask":"As pessoas de qual tipo sanguíneo sao consideradas universais?",
         "option_1":"Tipo O",
         "option_2":"Tipo B",
@@ -111,7 +111,7 @@
     },
     {
         "id_ask":12,
-        "imagem":"perg_imagem/imagem12.jpg",
+        "imagem":"/js/perg_imagem/imagem12.jpg",
         "ask":"Qual é o maior arqupélago da Terra?",
         "option_1":"A Filipinas",
         "option_2":"As Bahamas",
@@ -121,7 +121,7 @@
     },
     {
         "id_ask":13,
-        "imagem":"perg_imagem/imagem13.jpg",
+        "imagem":"/js/perg_imagem/imagem13.jpg",
         "ask":"Em que oceano fica Madagascar?",
         "option_1":"Oceano Antártico",
         "option_2":"Oceano Ártico",
@@ -131,7 +131,7 @@
     },
     {
         "id_ask":14,
-        "imagem":"perg_imagem/imagem14.jpg",
+        "imagem":"/js/perg_imagem/imagem14.jpg",
         "ask":"Qual o metal cujo o símbolo químico é o Au?",
         "option_1":"Cobre",
         "option_2":"Ouro",
@@ -141,7 +141,7 @@
     },
     {
         "id_ask":15,
-        "imagem":"perg_imagem/imagem15.jpg",
+        "imagem":"/js/perg_imagem/imagem15.jpg",
         "ask":"Quando é verão no Brasil, qual é a estação do ano na Europa?",
         "option_1":"Inverno",
         "option_2":"Primavera",
@@ -151,7 +151,7 @@
     },
     {
         "id_ask":16,
-        "imagem":"perg_imagem/imagem16.jpg",
+        "imagem":"/js/perg_imagem/imagem16.jpg",
         "ask":"Quem foi o criador da tragédia grega?",
         "option_1":"Eurípedes",
         "option_2":"Homero",
@@ -161,7 +161,7 @@
     },
     {
         "id_ask":17,
-        "imagem":"perg_imagem/imagem17.jpg",
+        "imagem":"/js/perg_imagem/imagem17.jpg",
         "ask":"Complete o provébio *Cavalo dado...",
         "option_1":"sai caro",
         "option_2":"não se olha os dentes",
@@ -171,7 +171,7 @@
     },
     {
         "id_ask":18,
-        "imagem":"perg_imagem/imagem18.jpg",
+        "imagem":"/js/perg_imagem/imagem18.jpg",
         "ask":"O que é Eufemismo?",
         "option_1":"Linguagem que se aprega para suavizar uma situação",
         "option_2":"Linguagem que se aprega para aumentar uma situação",
@@ -181,7 +181,7 @@
     },
     {
         "id_ask":19,
-        "imagem":"perg_imagem/imagem19.jpg",
+        "imagem":"/js/perg_imagem/imagem19.jpg",
         "ask":"O que é filantropo ",
         "option_1":"Pessoa Egoísta",
         "option_2":"Canto gregoriano",
@@ -191,7 +191,7 @@
     },
     {
         "id_ask":20,
-        "imagem":"perg_imagem/imagem20.jpg",
+        "imagem":"/js/perg_imagem/imagem20.jpg",
         "ask":"Quem é o autor da série Literária *Sítio do Picapau Amarelo?",
         "option_1":"Muricio de Souza",
         "option_2":"Monteiro Lobato",
@@ -201,7 +201,7 @@
     },
     {
         "id_ask":21,
-        "imagem":"perg_imagem/imagem21.png",
+        "imagem":"/js/perg_imagem/imagem21.png",
         "ask":"Qual artista é conhecido como o Rei do Pop?",
         "option_1":"Mauna Kea",
         "option_2":"Dhaulagiri",
@@ -211,7 +211,7 @@
     },
     {
         "id_ask":22,
-        "imagem":"perg_imagem/imagem22.jpg",
+        "imagem":"/js/perg_imagem/imagem22.jpg",
         "ask":"Qual é a cor das famosas cabines telefônicas de Londres",
         "option_1":"Pretas",
         "option_2":"Roxas",
@@ -221,7 +221,7 @@
     },
     {
         "id_ask":23,
-        "imagem":"perg_imagem/imagem23.jpg",
+        "imagem":"/js/perg_imagem/imagem23.jpg",
         "ask":"Qual é o ponto turístico mais famoso de Paris?",
         "option_1":"Catedral de Notre_Dame",
         "option_2":"A Torre Eiffel",
@@ -231,7 +231,7 @@
     },
     {
         "id_ask":24,
-        "imagem":"perg_imagem/imagem24.jpg",
+        "imagem":"/js/perg_imagem/imagem24.jpg",
         "ask":"Qual é o nome artístico da cantora Larissa de Macedo Machado?",
         "option_1":"Ivete Sangalo",
         "option_2":"Anita",
@@ -241,7 +241,7 @@
     },
     {
         "id_ask":25,
-        "imagem":"perg_imagem/imagem25.jpg",
+        "imagem":"/js/perg_imagem/imagem25.jpg",
         "ask":"Qual o personagem do folclore brasileiro tem os pés virados para trás?",
         "option_1":"O boto",
         "option_2":"Mula sem cabeça",
