@@ -10,10 +10,10 @@ var button_4 = document.querySelector("#button-4");
 
 
 
-var data = fetch("js/perguntas/perg.json")
+var data = fetch("../js/perguntas/perg.json")
     .then(resposta => {return resposta.json()})
     .then(json => {
-        imagem.src = json[1].imagem;
+        imagem.src = "../" + json[1].imagem;
         ask.innerHTML = json[1].ask;
         button_1.innerHTML = json[1].option_1;
         button_2.innerHTML = json[1].option_2;
