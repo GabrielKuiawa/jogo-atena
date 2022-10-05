@@ -81,7 +81,7 @@
     },
     {
         "id_ask":9,
-        "imagem":"js/perg_imagem/ imagem9.jpg",
+        "imagem":"js/perg_imagem/imagem9.jpg",
         "ask":"Qual o maior animal terrestre?",
         "option_1":"Baleia Azul",
         "option_2":"Dinossauro",
