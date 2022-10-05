@@ -9,5 +9,5 @@ function esconder(id) {
 }
 
 function Redirect() {
-    window.location.href = "/view/asks.html";
+    window.location.href = "view/asks.html";
 }
