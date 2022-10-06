@@ -15,7 +15,27 @@ function listarPerguntas() {
     .then(json => {
             var random = perguntasAleatorias(0,json.length);
             existePerguntas.push(random);
+
+            // console.log(existePerguntas.find(element => element > 10));
+            // const verifica = (item) => {
+            //     existePerguntas.includes(item) ? alert("Encontrou") : alert("Não encontrou");
+            // }
+
+            // verifica(random);
+            console.log(random);
             console.log(existePerguntas);
+
+            // console.log(existePerguntas.includes(random));
+            // console.log(existePerguntas.indexOf(random) > -1);
+            // for (let i = 0; i < existePerguntas.length; i++) {
+                // console.log(i);
+                // if (existePerguntas.includes(random)) {
+                //     console.log("já existe ---------------------- " + random);
+                // } else {
+                //     console.log("não existe");
+                // }
+                
+            // }
             
             imagem.src = "../" + json[random].imagem;
             ask.innerHTML = json[random].ask;
@@ -23,23 +43,23 @@ function listarPerguntas() {
             button_2.innerHTML = json[random].option_2;
             button_3.innerHTML = json[random].option_3;
             button_4.innerHTML = json[random].option_4;
-            
-            // Array.prototype.slice.call(buttons).forEach(function(pegaElementoAtual){
-            //     pegaElementoAtual.addEventListener('click', function(e){
-            //         if (this == button_1) {
-            //             alert("ACERTOU");
-            //         } else {
-            //             alert("errou");
-            //         }
-            //     });
-            // });
-            
-            
         }
     );
         
 }
     
+function certoOuErrado() {
+    Array.prototype.slice.call(buttons).forEach(function(pegaElementoAtual){
+        pegaElementoAtual.addEventListener('click', function(e){
+            if (this == button_1) {
+                alert("ACERTOU");
+            } else {
+                alert("errou");
+            }
+        });
+    });
+}
+
 function perguntasAleatorias(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
