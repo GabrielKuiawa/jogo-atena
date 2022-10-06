@@ -13,49 +13,41 @@ function listarPerguntas() {
     var data = fetch("../js/perguntas/perg.json")
     .then(resposta => {return resposta.json()})
     .then(json => {
-            var random = perguntasAleatorias(0,json.length);
-            existePerguntas.push(random);
-
-            // console.log(existePerguntas.find(element => element > 10));
-            // const verifica = (item) => {
-            //     existePerguntas.includes(item) ? alert("Encontrou") : alert("Não encontrou");
-            // }
-
-            // verifica(random);
-            console.log(random);
-            console.log(existePerguntas);
-
-            // console.log(existePerguntas.includes(random));
-            // console.log(existePerguntas.indexOf(random) > -1);
-            // for (let i = 0; i < existePerguntas.length; i++) {
-                // console.log(i);
-                // if (existePerguntas.includes(random)) {
-                //     console.log("já existe ---------------------- " + random);
-                // } else {
-                //     console.log("não existe");
-                // }
-                
-            // }
-            
+        var random = perguntasAleatorias(0,json.length);
+        
+        
+        var exist = existePerguntas.filter(perg => random == perg);
+        
+        console.log(exist);
+        if (exist > 0) {
+            // listarPerguntas();
+            console.log("já existe " + random );
+        } else {            
             imagem.src = "../" + json[random].imagem;
             ask.innerHTML = json[random].ask;
             button_1.innerHTML = json[random].option_1;
             button_2.innerHTML = json[random].option_2;
             button_3.innerHTML = json[random].option_3;
-            button_4.innerHTML = json[random].option_4;
+            button_4.innerHTML = json[random].option_4;  
+            // console.log(json[random].response);
+            
+            certoOuErrado(buttons,json[random].response);
+            existePerguntas.push(random);
+            console.log(exist);
         }
-    );
-        
+
+    });
 }
     
-function certoOuErrado() {
+function certoOuErrado(buttons, res) {
     Array.prototype.slice.call(buttons).forEach(function(pegaElementoAtual){
         pegaElementoAtual.addEventListener('click', function(e){
-            if (this == button_1) {
-                alert("ACERTOU");
-            } else {
-                alert("errou");
-            }
+            console.log(res);
+            // if (this.attributes.value.value == json[random].response) {
+            //     alert("ACERTOU");
+            // } else {
+            //     alert("errou");
+            // }
         });
     });
 }
