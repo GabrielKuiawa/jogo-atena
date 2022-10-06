@@ -112,7 +112,7 @@
     {
         "id_ask":12,
         "imagem":"js/perg_imagem/imagem12.jpg",
-        "ask":"Qual é o maior arqupélago da Terra?",
+        "ask":"Qual é o maior arquipélago da Terra?",
         "option_1":"A Filipinas",
         "option_2":"As Bahamas",
         "option_3":"A Indonésia",
@@ -162,7 +162,7 @@
     {
         "id_ask":17,
         "imagem":"js/perg_imagem/imagem17.jpg",
-        "ask":"Complete o provébio *Cavalo dado...",
+        "ask":"Complete o provébio \"Cavalo dado...",
         "option_1":"sai caro",
         "option_2":"não se olha os dentes",
         "option_3":"não se olha o rabo",
@@ -203,11 +203,11 @@
         "id_ask":21,
         "imagem":"js/perg_imagem/imagem21.png",
         "ask":"Qual artista é conhecido como o Rei do Pop?",
-        "option_1":"Mauna Kea",
-        "option_2":"Dhaulagiri",
-        "option_3":"Monte Everest",
-        "option_4":"Pico da Neblina",
-        "response":"option_3"
+        "option_1":"Michael Jackson",
+        "option_2":"Tim Maia",
+        "option_3":"Justin Bieber",
+        "option_4":"Luan Santana",
+        "response":"option_1"
     },
     {
         "id_ask":22,
