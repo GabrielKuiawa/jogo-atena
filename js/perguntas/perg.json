@@ -192,7 +192,7 @@
     {
         "id_ask":20,
         "imagem":"js/perg_imagem/imagem20.jpg",
-        "ask":"Quem é o autor da série Literária *Sítio do Picapau Amarelo?",
+        "ask":"Quem é o autor da série Literária \"Sítio do Picapau Amarelo?",
         "option_1":"Muricio de Souza",
         "option_2":"Monteiro Lobato",
         "option_3":"Machado De Assís",

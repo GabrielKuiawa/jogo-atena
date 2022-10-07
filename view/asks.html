@@ -9,19 +9,26 @@
     </head>
     <body>
         <section>
-            <div class="card" >
-                <div class="container-img">
-                    <img id="imagem" class="img-card" alt="">                
-                </div>
-                <p id="ask" ></p>
-                <div class="container-button">
-                    <div id="button-1" value="option_1"  class="button">1</div>
-                    <div id="button-2" value="option_2"  class="button">2</div>
-                    <div id="button-3" value="option_3"  class="button">3</div>
-                    <div id="button-4" value="option_4"  class="button">4</div>
-                </div>
-            </div> 
+            <div>
+                <div id="card" class="card" >
+                    <div class="container-img">
+                        <img id="imagem" class="img-card" alt="">                
+                    </div>
+                    <p id="ask" ></p>
+                    <div class="container-button">
+                        <div id="id_ask" style="display:none ;"></div>
+                        <div id="button-1" onclick="certoOuErrado(this)" value="option_1"  class="button">1</div>
+                        <div id="button-2" onclick="certoOuErrado(this)" value="option_2"  class="button">2</div>
+                        <div id="button-3" onclick="certoOuErrado(this)" value="option_3"  class="button">3</div>
+                        <div id="button-4" onclick="certoOuErrado(this)" value="option_4"  class="button">4</div>
+                    </div>
+                </div> 
+            </div>
             
+            <div id="ask-section" class="result">
+                <h1>Parabéns Gabriel do  2°B</h1>
+                <h2>Você merece uma bala</h2>
+            </div>
         </section>
         <script src="../js/main.js" ></script>
     </body>
