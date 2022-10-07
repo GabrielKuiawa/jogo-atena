@@ -1,3 +1,7 @@
+var ask_section = document.querySelector("#ask-section");
+var pontuacao = document.querySelector("#pontuacao");
+var h5 = document.querySelector("#h5");
+
 var buttons = document.getElementsByClassName('button');
 
 var id_ask = document.querySelector("#id_ask");
@@ -10,6 +14,10 @@ var button_3 = document.querySelector("#button-3");
 var button_4 = document.querySelector("#button-4");
 
 var existePerguntas = [];
+
+var totalDeperguntas = 0;
+
+var pontos = 0;
 
 listarPerguntas();
 
@@ -35,6 +43,7 @@ function listarPerguntas() {
         }
     );
 }
+
 function certoOuErrado(nQuestao) {
     fetch("../js/perguntas/perg.json").then(resposta => { return resposta.json() }).then(json => {
         var random = perguntasAleatorias(0, json.length);
@@ -46,19 +55,38 @@ function certoOuErrado(nQuestao) {
         if (nQuestao.attributes.value.nodeValue == json[id_ask.innerText -1].response) {
             nQuestao.style = "background-color: green";
             setTimeout(function () {
-                proxima = random;
-                proximaQuestao(proxima, json);
-                nQuestao.style = "#fff";
-            }, 1000)
+                if (totalDeperguntas > 10) {
+                    acabou();
+                } else {
+                    proxima = random;
+                    pontos += 10;
+                    proximaQuestao(proxima, json);
+                    nQuestao.style = "#fff";
+                }
+            }, 800)
         } else {
             setTimeout(function () {
-                proxima = random;
-                proximaQuestao(proxima, json);
-                nQuestao.style = "#fff";
-            }, 1000)
+                if (totalDeperguntas > 10) {
+                    console.log("acabou");
+                    ask_section.style.display = 'none';
+                    pontuacao.style.display = 'flex';
+                } else {
+                    proxima = random;
+                    proximaQuestao(proxima, json);
+                    nQuestao.style = "#fff";
+                }
+            }, 800)
             nQuestao.style = "background-color: red";
         }
     })
+    totalDeperguntas += 1;
+}
+
+function acabou() {
+    console.log("acabou");
+    ask_section.style.display = 'none';
+    pontuacao.style.display = 'flex';
+    h5.innerHTML = "Sua pontuação foi de: " + pontos;
 }
 
 function perguntasAleatorias(min, max) {

@@ -64,7 +64,23 @@ p {
 }
 
 #ask-section {
+    display: flex;
+}
+
+#pontuacao {
     display: none;
+}
+
+.gif {
+    width: 40vw;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h5 {
+    font-size: 40px;
 }
 
 @media (min-width: 0px) and (max-width:880px) {
@@ -100,5 +116,17 @@ p {
         padding: 1rem;
         cursor: pointer;
         text-align: center;
+    }
+
+    .gif {
+        width: 70vw;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+    
+    h5 {
+        font-size: 20px;
     }
 }
