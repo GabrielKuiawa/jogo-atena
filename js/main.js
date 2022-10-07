@@ -22,14 +22,14 @@ function listarPerguntas() {
 
             var exist = existePerguntas.filter(perg => random == perg);
 
-            console.log(json.length);
+            // console.log(json.length);
             // console.log(exist);
             if (exist > 0) {
                 console.log("já existe " + random);
             } else {
                 proximaQuestao(random, json);
-
-                certoOuErrado(buttons, json[random].response, json, random);
+                console.log(id_ask.innerText);
+                // certoOuErrado(buttons, json[random].response, json, random);
                 existePerguntas.push(random);
             }
         }
@@ -39,18 +39,25 @@ function certoOuErrado(nQuestao) {
     fetch("../js/perguntas/perg.json").then(resposta => { return resposta.json() }).then(json => {
         var random = perguntasAleatorias(0, json.length);
 
-        if (nQuestao.attributes.value.value == json[id_ask.innerText].response) {
+        console.log(id_ask.innerText);
+        console.log(nQuestao.attributes.value.nodeValue);
+        console.log(json[id_ask.innerText -1].response);
+
+        if (nQuestao.attributes.value.nodeValue == json[id_ask.innerText -1].response) {
             nQuestao.style = "background-color: green";
+            setTimeout(function () {
+                proxima = random;
+                proximaQuestao(proxima, json);
+                nQuestao.style = "#fff";
+            }, 1000)
         } else {
+            setTimeout(function () {
+                proxima = random;
+                proximaQuestao(proxima, json);
+                nQuestao.style = "#fff";
+            }, 1000)
             nQuestao.style = "background-color: red";
         }
-    
-    
-        setTimeout(function () {
-            proxima = random;
-            console.log("caiu aqui");
-            proximaQuestao(proxima, json);
-        }, 300)
     })
 }
 
