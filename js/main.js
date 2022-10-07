@@ -29,9 +29,6 @@ function listarPerguntas() {
             var random = perguntasAleatorias(0, json.length);
 
             var exist = existePerguntas.filter(perg => random == perg);
-
-            // console.log(json.length);
-            // console.log(exist);
             if (exist > 0) {
                 console.log("já existe " + random);
             } else {
@@ -63,19 +60,17 @@ function certoOuErrado(nQuestao) {
                     proximaQuestao(proxima, json);
                     nQuestao.style = "#fff";
                 }
-            }, 800)
+            }, 600)
         } else {
             setTimeout(function () {
                 if (totalDeperguntas > 10) {
-                    console.log("acabou");
-                    ask_section.style.display = 'none';
-                    pontuacao.style.display = 'flex';
+                    acabou();
                 } else {
                     proxima = random;
                     proximaQuestao(proxima, json);
                     nQuestao.style = "#fff";
                 }
-            }, 800)
+            }, 600)
             nQuestao.style = "background-color: red";
         }
     })

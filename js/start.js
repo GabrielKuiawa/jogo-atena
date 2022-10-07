@@ -10,4 +10,17 @@ function esconder(id) {
 
 function Redirect() {
     window.location.href = "view/asks.html";
+    save();
+}
+
+function save() {
+    var nome = document.querySelector("#nome").value;
+    var serie = document.querySelector("#serie").value;
+
+    const note = {
+        "nome" : nome,
+        "serie" : serie
+    }
+
+    localStorage.setItem("aluno", JSON.stringify(note));
 }
