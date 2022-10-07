@@ -52,7 +52,7 @@ p {
 }
 
 .button:hover {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(153, 255, 0);
     transition: 1s;
 }
 
